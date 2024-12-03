@@ -10,10 +10,12 @@ import SwiftData
 struct MainView: View {
     var body: some View {
         TabView {
-            DashboardView()
-                .tabItem {
-                    Label("Dashboard", systemImage: "list.dash")
-                }
+            NavigationStack {
+                DashboardView()
+            }
+            .tabItem {
+                Label("Dashboard", systemImage: "list.dash")
+            }
             
             CompassView()
                 .tabItem {
@@ -29,5 +31,5 @@ struct MainView: View {
 
 #Preview {
     MainView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: Activity.self, inMemory: true)
 }
