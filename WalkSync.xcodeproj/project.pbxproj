@@ -81,6 +81,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		351460C32CFFC32100703EA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3561BF1A2CEB20A600E1E90E /* MainView.swift */,
+				3563E0282CED94E00019FF99 /* DashboardView.swift */,
+				351460BB2CFD2A4D00703EA9 /* CompassView.swift */,
+				351460C12CFFBE0300703EA9 /* ActivityLogView.swift */,
+				351460BD2CFEB5DA00703EA9 /* Launch Screen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		351460C42CFFC32A00703EA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3561BEF22CEB1CE700E1E90E /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		351460C52CFFC33900703EA9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3561BEEE2CEB1CE700E1E90E /* WalkSyncApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		3561BEE22CEB1CE600E1E90E = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +132,9 @@
 		3561BEED2CEB1CE700E1E90E /* WalkSync */ = {
 			isa = PBXGroup;
 			children = (
-				3561BEEE2CEB1CE700E1E90E /* WalkSyncApp.swift */,
-				3561BEF22CEB1CE700E1E90E /* Activity.swift */,
-				3561BF1A2CEB20A600E1E90E /* MainView.swift */,
-				3563E0282CED94E00019FF99 /* DashboardView.swift */,
-				351460BB2CFD2A4D00703EA9 /* CompassView.swift */,
-				351460C12CFFBE0300703EA9 /* ActivityLogView.swift */,
-				351460BD2CFEB5DA00703EA9 /* Launch Screen.storyboard */,
+				351460C52CFFC33900703EA9 /* App */,
+				351460C42CFFC32A00703EA9 /* Models */,
+				351460C32CFFC32100703EA9 /* Views */,
 				3561BEF42CEB1CE900E1E90E /* Assets.xcassets */,
 				3561BEF62CEB1CE900E1E90E /* Preview Content */,
 			);
