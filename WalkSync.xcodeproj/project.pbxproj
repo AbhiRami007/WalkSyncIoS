@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		351460BC2CFD2A4D00703EA9 /* CompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351460BB2CFD2A4D00703EA9 /* CompassView.swift */; };
 		351460BE2CFEB5DA00703EA9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 351460BD2CFEB5DA00703EA9 /* Launch Screen.storyboard */; };
+		351460C22CFFBE0300703EA9 /* ActivityLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351460C12CFFBE0300703EA9 /* ActivityLogView.swift */; };
 		3561BEEF2CEB1CE700E1E90E /* WalkSyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BEEE2CEB1CE700E1E90E /* WalkSyncApp.swift */; };
-		3561BEF12CEB1CE700E1E90E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BEF02CEB1CE700E1E90E /* ContentView.swift */; };
-		3561BEF32CEB1CE700E1E90E /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BEF22CEB1CE700E1E90E /* Item.swift */; };
+		3561BEF32CEB1CE700E1E90E /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BEF22CEB1CE700E1E90E /* Activity.swift */; };
 		3561BEF52CEB1CE900E1E90E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3561BEF42CEB1CE900E1E90E /* Assets.xcassets */; };
 		3561BEF82CEB1CE900E1E90E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3561BEF72CEB1CE900E1E90E /* Preview Assets.xcassets */; };
 		3561BF022CEB1CE900E1E90E /* WalkSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BF012CEB1CE900E1E90E /* WalkSyncTests.swift */; };
@@ -41,10 +41,10 @@
 /* Begin PBXFileReference section */
 		351460BB2CFD2A4D00703EA9 /* CompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassView.swift; sourceTree = "<group>"; };
 		351460BD2CFEB5DA00703EA9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		351460C12CFFBE0300703EA9 /* ActivityLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogView.swift; sourceTree = "<group>"; };
 		3561BEEB2CEB1CE700E1E90E /* WalkSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3561BEEE2CEB1CE700E1E90E /* WalkSyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkSyncApp.swift; sourceTree = "<group>"; };
-		3561BEF02CEB1CE700E1E90E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3561BEF22CEB1CE700E1E90E /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		3561BEF22CEB1CE700E1E90E /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		3561BEF42CEB1CE900E1E90E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3561BEF72CEB1CE900E1E90E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3561BEFD2CEB1CE900E1E90E /* WalkSyncTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkSyncTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,11 +105,11 @@
 			isa = PBXGroup;
 			children = (
 				3561BEEE2CEB1CE700E1E90E /* WalkSyncApp.swift */,
-				3561BEF02CEB1CE700E1E90E /* ContentView.swift */,
-				3561BEF22CEB1CE700E1E90E /* Item.swift */,
+				3561BEF22CEB1CE700E1E90E /* Activity.swift */,
 				3561BF1A2CEB20A600E1E90E /* MainView.swift */,
 				3563E0282CED94E00019FF99 /* DashboardView.swift */,
 				351460BB2CFD2A4D00703EA9 /* CompassView.swift */,
+				351460C12CFFBE0300703EA9 /* ActivityLogView.swift */,
 				351460BD2CFEB5DA00703EA9 /* Launch Screen.storyboard */,
 				3561BEF42CEB1CE900E1E90E /* Assets.xcassets */,
 				3561BEF62CEB1CE900E1E90E /* Preview Content */,
@@ -273,11 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3561BEF12CEB1CE700E1E90E /* ContentView.swift in Sources */,
-				3561BEF32CEB1CE700E1E90E /* Item.swift in Sources */,
+				3561BEF32CEB1CE700E1E90E /* Activity.swift in Sources */,
 				3563E0292CED94E00019FF99 /* DashboardView.swift in Sources */,
 				351460BC2CFD2A4D00703EA9 /* CompassView.swift in Sources */,
 				3561BF1B2CEB20A600E1E90E /* MainView.swift in Sources */,
+				351460C22CFFBE0300703EA9 /* ActivityLogView.swift in Sources */,
 				3561BEEF2CEB1CE700E1E90E /* WalkSyncApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
