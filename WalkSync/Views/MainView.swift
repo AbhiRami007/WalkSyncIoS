@@ -31,13 +31,13 @@ struct MainView: View {
                 Label("Profile", systemImage: "person.circle")
             }
             
-//            // Settings Navigation (Optional, add if needed)
-//            NavigationStack {
-//                SettingsView() // Add your SettingsView
-//            }
-//            .tabItem {
-//                Label("Settings", systemImage: "gearshape")
-//            }
+            // Settings Navigation (Optional, add if needed)
+            NavigationStack {
+                SettingsView() // Add your SettingsView
+            }
+            .tabItem {
+                Label("Settings", systemImage: "gearshape")
+            }
         }
         .onAppear {
             UITabBar.appearance().backgroundColor = UIColor.lightGray.withAlphaComponent(0.05)
