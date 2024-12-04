@@ -23,11 +23,11 @@ struct DashboardView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.bottom, 10)
-
+                
                 Text("Your activity...")
                     .font(.subheadline)
                     .padding(.bottom, 20)
-
+                
                 HStack {
                     VStack {
                         Image(systemName: "shoeprints.fill")
@@ -50,7 +50,7 @@ struct DashboardView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(.gray, lineWidth: 0.5)
                 )
-
+                
                 HStack {
                     VStack {
                         Image(systemName: "figure.walk")
@@ -73,7 +73,7 @@ struct DashboardView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(.gray, lineWidth: 0.5)
                 )
-
+                
                 HStack {
                     VStack {
                         Image(systemName: "speedometer")
@@ -96,17 +96,28 @@ struct DashboardView: View {
                     RoundedRectangle(cornerRadius: 12)
                         .stroke(.gray, lineWidth: 0.5)
                 )
-
-                Button(isTracking ? "Stop Tracking" : "Start Tracking") {
+                
+                Button(action: {
+                    // Generate notification when the button is clicked
+                    NotificationGenerator.generateNotification(
+                        title: isTracking ? "Started Tracking" : "Stopped Tracking",
+                        description: isTracking ? "Your Activity is being monitored" : "Activity Monitoring stopped"
+                    )
+                    
+                    // Toggle tracking state
                     toggleTracking()
+                }) {
+                    Text(isTracking ? "Stop Tracking" : "Start Tracking")  // The button label
                 }
+
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(isTracking ? Color.red : Color.orange)
                 .foregroundColor(.white)
                 .cornerRadius(20)
                 .padding(.top, 20)
-
+                
+                
                 NavigationLink(destination: ActivityLogView()) {
                     HStack {
                         Image(systemName: "shoeprints.fill")
@@ -128,6 +139,11 @@ struct DashboardView: View {
             .padding()
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.white)
+        }
+        .onAppear {
+            Task {
+                await NotificationGenerator.requestAuthorization()
+            }
         }
     }
 
