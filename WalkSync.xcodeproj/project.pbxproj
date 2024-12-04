@@ -19,6 +19,8 @@
 		3561BF0E2CEB1CE900E1E90E /* WalkSyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BF0D2CEB1CE900E1E90E /* WalkSyncUITestsLaunchTests.swift */; };
 		3561BF1B2CEB20A600E1E90E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3561BF1A2CEB20A600E1E90E /* MainView.swift */; };
 		3563E0292CED94E00019FF99 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3563E0282CED94E00019FF99 /* DashboardView.swift */; };
+		9693A3D62CFFFEBA0047F30A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9693A3D52CFFFEBA0047F30A /* ProfileView.swift */; };
+		9693A3D82CFFFF2B0047F30A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9693A3D72CFFFF2B0047F30A /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		3561BF0D2CEB1CE900E1E90E /* WalkSyncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkSyncUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3561BF1A2CEB20A600E1E90E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3563E0282CED94E00019FF99 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		9693A3D52CFFFEBA0047F30A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9693A3D72CFFFF2B0047F30A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				351460BB2CFD2A4D00703EA9 /* CompassView.swift */,
 				351460C12CFFBE0300703EA9 /* ActivityLogView.swift */,
 				351460BD2CFEB5DA00703EA9 /* Launch Screen.storyboard */,
+				9693A3D52CFFFEBA0047F30A /* ProfileView.swift */,
+				9693A3D72CFFFF2B0047F30A /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,10 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3561BEF32CEB1CE700E1E90E /* Activity.swift in Sources */,
+				9693A3D82CFFFF2B0047F30A /* SettingsView.swift in Sources */,
 				3563E0292CED94E00019FF99 /* DashboardView.swift in Sources */,
 				351460BC2CFD2A4D00703EA9 /* CompassView.swift in Sources */,
 				3561BF1B2CEB20A600E1E90E /* MainView.swift in Sources */,
 				351460C22CFFBE0300703EA9 /* ActivityLogView.swift in Sources */,
+				9693A3D62CFFFEBA0047F30A /* ProfileView.swift in Sources */,
 				3561BEEF2CEB1CE700E1E90E /* WalkSyncApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkSync/Preview Content\"";
-				DEVELOPMENT_TEAM = PD8CW3G664;
+				DEVELOPMENT_TEAM = 74M9K323J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your motion data to track your activity.";
@@ -484,7 +492,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adityachintha.WalkSync;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.WalkSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -500,7 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WalkSync/Preview Content\"";
-				DEVELOPMENT_TEAM = PD8CW3G664;
+				DEVELOPMENT_TEAM = 74M9K323J5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your motion data to track your activity.";
@@ -518,7 +526,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.adityachintha.WalkSync;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aditya.WalkSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
