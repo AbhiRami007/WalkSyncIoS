@@ -24,7 +24,7 @@ struct WalkSyncApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MainView()
+            OnboardingView()
         }
         .modelContainer(sharedModelContainer)
     }
